@@ -1,3 +1,7 @@
-my_training_homepage:
+my_training_helloworld:
     path:     /hello/{name}
     defaults: { _controller: MyTrainingBundle:Default:index }
+
+my_training_homepage:
+    path:     /
+    defaults: { _controller: MyTrainingBundle:MyController:index }
