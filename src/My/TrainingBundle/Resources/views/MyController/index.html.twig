@@ -1,5 +1,11 @@
 {% extends "::base.html.twig" %}
 
+{% block stylesheets %}
+    {% stylesheets '@MyTrainingBundle/Resources/css/bundle.css' %}
+        <link href="{{ asset_url }}" type="text/css" rel="stylesheet" />
+    {% endstylesheets %}
+{% endblock %}
+
 {% block title %}MyTrainingBundle:MyController:GET{% endblock %}
 
 {% block body %}
