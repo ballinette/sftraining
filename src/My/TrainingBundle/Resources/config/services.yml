@@ -1,4 +1,8 @@
 services:
+    access_twig_extension:
+        class: My\TrainingBundle\Twig\MyTrainingExtension
+        arguments:  [@service_container]
+        tags: [{ name: twig.extension }]
 #    my_training.example:
 #        class: My\TrainingBundle\Example
 #        arguments: [@service_id, "plain_value", %parameter%]
