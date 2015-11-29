@@ -1,0 +1,4 @@
+my_training:
+    resource: "@MyTrainingBundle/Resources/config/routing.yml"
+    prefix:   /
+
