@@ -1,0 +1,4 @@
+services:
+#    my_training.example:
+#        class: My\TrainingBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

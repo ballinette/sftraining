@@ -1,0 +1,3 @@
+my_training_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: MyTrainingBundle:Default:index }
