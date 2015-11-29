@@ -1,7 +1,12 @@
 {% extends "::base.html.twig" %}
 
-{% block title %}MyTrainingBundle:MyController:index{% endblock %}
+{% block title %}MyTrainingBundle:MyController:GET{% endblock %}
 
 {% block body %}
-<h1>Welcome to the MyController:index page</h1>
+<h1>Welcome to the MyController:GET page</h1>
+Parameters get:
+<ul>
+<li>Param1: {{ param1 }}</li>
+<li>Param2: {{ param2 }}</li>
+</ul>
 {% endblock %}

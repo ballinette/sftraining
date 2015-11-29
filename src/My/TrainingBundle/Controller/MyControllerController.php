@@ -31,4 +31,12 @@ class MyControllerController extends Controller
       return $response;
     }
 
+    public function getAction($param1, $param2)
+    {
+      $response = new Response('', 200, ['X-Controller'=> 'MyController']);
+      return $this->render('MyTrainingBundle:MyController:index.html.twig',
+                            ['param1' => $param1, 'param2' => $param2 ],
+                            $response);
+    }
+
 }

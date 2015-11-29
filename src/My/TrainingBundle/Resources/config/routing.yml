@@ -5,3 +5,7 @@ my_training_helloworld:
 my_training_homepage:
     path:     /
     defaults: { _controller: MyTrainingBundle:MyController:index }
+
+my_training_get:
+    path:     /get/{param1}/{param2}
+    defaults: { _controller: MyTrainingBundle:MyController:get }
