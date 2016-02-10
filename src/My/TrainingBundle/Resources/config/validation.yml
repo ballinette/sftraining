@@ -17,6 +17,7 @@ My\TrainingBundle\Entity\Job:
       - NotBlank: ~
     token:
       - NotBlank: ~
+      - My\TrainingBundle\Validator\Constraints\ContainsAlphanumeric: ~
     email:
       - NotBlank: ~
       - Email:
