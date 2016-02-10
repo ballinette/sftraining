@@ -1,0 +1,31 @@
+job:
+    path:     /
+    defaults: { _controller: "MyTrainingBundle:Job:index" }
+
+job_show:
+    path:   /{company}/{location}/{id}/{position}
+    defaults: { _controller: "MyTrainingBundle:Job:show" }
+    requirements: { id: \d+ }
+
+job_new:
+    path:     /new
+    defaults: { _controller: "MyTrainingBundle:Job:new" }
+
+job_create:
+    path:     /create
+    defaults: { _controller: "MyTrainingBundle:Job:create" }
+    requirements: { _method: post }
+
+job_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "MyTrainingBundle:Job:edit" }
+
+job_update:
+    path:     /{id}/update
+    defaults: { _controller: "MyTrainingBundle:Job:update" }
+    requirements: { _method: post|put }
+
+job_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "MyTrainingBundle:Job:delete" }
+    requirements: { _method: post|delete }

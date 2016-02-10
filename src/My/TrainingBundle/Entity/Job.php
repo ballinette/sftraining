@@ -3,6 +3,7 @@
 namespace My\TrainingBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use My\TrainingBundle\Utils\Formatter as Formatter;
 
 /**
  * Job
@@ -490,4 +491,20 @@ class Job
     {
       $this->updated_at = new \DateTime();
     }
+
+    public function getCompanySlug()
+    {
+        return Formatter::slugify($this->getCompany());
+    }
+
+    public function getPositionSlug()
+    {
+        return Formatter::slugify($this->getPosition());
+    }
+
+    public function getLocationSlug()
+    {
+        return Formatter::slugify($this->getLocation());
+    }
+
 }
