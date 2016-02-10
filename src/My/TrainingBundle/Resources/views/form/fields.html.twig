@@ -1,0 +1,14 @@
+{% block form_row %}
+{% spaceless %}
+    <div class="form_row">
+        {{ form_label(form) }}
+        {{ form_errors(form) }}
+        {{ form_widget(form) }}
+    </div>
+{% endspaceless %}
+{% endblock form_row %}
+
+{%- block email_widget -%}
+    <input type="email" placeholder="test@example.org"  {{ block('widget_attributes') }} {% if value is not empty %}value="{{ value }}" {% endif %}/>
+ {%- endblock email_widget -%}
+ 
